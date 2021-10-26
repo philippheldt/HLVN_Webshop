@@ -1,0 +1,148 @@
+@font-face{
+	font-family: 'Avenir';
+	src: url('fonts/Avenir_Next.ttc') format('tcc'),
+}
+
+*{
+    margin: 0;
+    padding: 0;;
+}
+
+body{
+    font-family: Avenir Next;
+    display: flex;
+    background-color: #E9D3BC;
+    color: #fff;
+    flex-wrap: wrap;
+    height: 100vh;
+}
+
+p{
+    font-weight: 0;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 15px;
+}
+h1{
+    font-weight: 700;
+}
+
+a{
+    text-decoration: none;
+    color: #E9D3BC;
+    margin-right: 20px;
+}
+
+button{
+    padding: 20px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    background-color: #939583;
+    margin-top: 100px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    transform: scale(1.03);
+    background-color: #777969;
+}
+
+footer{
+    background-color: #fff;
+    color: #E9D3BC;
+    width: 100vw;
+    display: flex;
+    min-height: 50px;
+}
+
+footer .container{
+    margin: auto;
+    width: 1000px;  
+    display: flex;
+    grid-gap: 0px;
+}
+
+footer .container img{
+    height: 20px;
+    align-self: center;
+}
+
+
+nav{
+    grid-column: 1 / 3;
+    margin: 50px 0 20px 0;
+}
+
+nav img{
+    width: 200px;
+}
+
+.container{
+    margin: 50px auto 100px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 7fr 10fr;
+    grid-gap: 0 6em;
+}
+
+.description{
+    display: flex;
+    height: 100%;
+}
+
+.spacer{
+    margin: auto;
+}
+
+
+.gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em
+}
+
+.image-large{
+    min-width: 100%;
+    grid-column: 1 / 5;
+}
+
+.image-preview{
+   width: 100%;
+   cursor: pointer;
+}
+
+.image-preview img{
+    transition: all 0.25s ease;
+}
+
+.image-preview img:hover{
+    transform: scale(1.1);
+}
+
+.image-large img, 
+.image-preview img{
+    width: 100%;
+}
+
+@media (max-width: 1000px) {
+    .gallery, 
+    .description{
+        grid-column: 1 / 3;
+    }
+
+    .container{
+        margin: 0 50px 100px 50px;
+        grid-gap: 6em;
+    }
+
+    footer .container{
+        margin: 20px 50px;
+    }
+
+    nav{
+        margin: 50px 0 -60px 0;
+    }
+}
