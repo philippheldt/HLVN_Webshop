@@ -83,7 +83,7 @@ nav img{
 
 .container{
     margin: 50px auto 100px auto;
-    max-width: 1000px;
+    width: 1000px;
     display: grid;
     grid-template-columns: 7fr 10fr;
     grid-gap: 0 6em;
@@ -132,6 +132,15 @@ nav img{
 .image-preview img{
     width: 100%;
     cursor: pointer;
+}
+
+.paypal{
+    min-height: 530px;
+
+}
+.paypal-button-container{
+    width: 100%;
+    margin: auto;
 }
 
 @media (max-width: 1000px) {
