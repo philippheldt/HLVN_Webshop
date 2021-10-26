@@ -120,6 +120,7 @@ nav img{
 
 .image-preview img{
     transition: all 0.25s ease;
+    cursor: pointer;
 }
 
 .image-preview img:hover{
@@ -130,6 +131,7 @@ nav img{
 .image-large img, 
 .image-preview img{
     width: 100%;
+    cursor: pointer;
 }
 
 @media (max-width: 1000px) {

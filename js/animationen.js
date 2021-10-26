@@ -18,6 +18,7 @@ document.body.querySelectorAll('.gallery')[0].addEventListener('click', function
   const imageClicked = e.target.parentElement;
   const imageLarge = document.querySelector('.image-large img');
   
+  
   console.log(imageClicked);
   if(image === imageLarge){
     return;
