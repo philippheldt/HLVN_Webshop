@@ -1,6 +1,6 @@
-const start = selectTag.addEventListener("change", function(){
+const selectTag = document.querySelectorAll("select")[0];
+selectTag.addEventListener("change", function(){
     let gesamtPayPal
-    const selectTag = document.querySelectorAll("select")[0];
     let gesamtBetrag = selectTag.value*20;
     document.querySelector('#gesamtOben').innerHTML = gesamtBetrag + ',00 €';
     document.querySelector('#gesamtUnten').innerHTML = gesamtBetrag + ',00 €';
@@ -10,9 +10,8 @@ const start = selectTag.addEventListener("change", function(){
     return gesamtPayPal;
 })
 
-let gesamtPayPal = start;
 
-console.log(gesamtPayPal);
+
 
 paypal.Buttons({
     createOrder: function(data, actions) {
