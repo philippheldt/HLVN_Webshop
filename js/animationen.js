@@ -8,7 +8,18 @@ window.addEventListener('load', function () {
           translateY: [50, 0],
           duration: 1000,
           easing: 'easeInOutBack',
-          delay: 50 * i
+          delay: 100 * i
         });
   })
+})
+
+document.addEventListener('click', function(e){
+  const image = e.target;
+  const imageClicked = e.target.parentElement;
+  const imageLarge = document.querySelector('.image-large img');
+
+  console.log(imageClicked);
+
+  document.querySelector('.image-large').appendChild(image);
+  imageClicked.appendChild(imageLarge)  
 })

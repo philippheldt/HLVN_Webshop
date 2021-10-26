@@ -48,6 +48,7 @@ button{
 button:hover{
     transform: scale(1.03);
     background-color: #777969;
+    cursor: pointer;
 }
 
 footer{
@@ -106,6 +107,8 @@ nav img{
 
 .image-large{
     min-width: 100%;
+    /* height: 846px;
+    overflow: hidden; */
     grid-column: 1 / 5;
 }
 
@@ -120,6 +123,7 @@ nav img{
 
 .image-preview img:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 .image-large img, 
