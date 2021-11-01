@@ -27,7 +27,7 @@ h1{
     font-weight: 700;
 }
 
-a{
+footer a{
     text-decoration: none;
     color: #E9D3BC;
     margin-right: 20px;
@@ -46,8 +46,10 @@ button{
     border-radius: 5px;
 }
 
-button img{
-    width: 30px;
+.secondary{
+    border: 3px solid #939583;
+    color: #939583;
+    background-color: #E9D3BC;
 }
 
 button:hover{
@@ -173,6 +175,10 @@ nav img{
 
 .subtotal.visible{
     opacity: 1;
+}
+
+.more{
+    background-color: white;
 }
 
 @media (max-width: 1000px) {
