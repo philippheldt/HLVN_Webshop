@@ -1,7 +1,7 @@
 
 const selectTag = document.querySelectorAll("select")[0].addEventListener("change", function(){
     const elem = document.querySelectorAll("select")[0];
-    let gesamtBetrag = elem.value*20;
+    let gesamtBetrag = elem.value*22;
     document.querySelector('#gesamtOben').innerHTML = gesamtBetrag + ',00 €';
     document.querySelector('#gesamtUnten').innerHTML = gesamtBetrag + ',00 €';
     document.querySelector('.subtotal').classList.add('visible');
@@ -33,7 +33,7 @@ paypal.Buttons({
       // This function captures the funds from the transaction.
       return actions.order.capture().then(function(details) {
         // This function shows a transaction success message to your buyer.
-        console.log(details);
+        window.location.replace("danke.html")
       });
     },
     style: {

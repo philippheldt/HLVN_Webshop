@@ -1,6 +1,7 @@
 const transDelay = document.querySelectorAll('.transition');
+const transDelayTurn = document.querySelectorAll('.transition-turn');
 
-window.addEventListener('load', function () {
+
   transDelay.forEach((e,i)=>{
       anime({
           targets: e,
@@ -11,6 +12,19 @@ window.addEventListener('load', function () {
           delay: 100 * i
         });
   })
+
+  transDelayTurn.forEach((e,i)=>{
+    anime({
+        targets: e,
+        opacity: [0,1],
+        translateY: [50, 0],
+        rotate: -5,
+        duration: 1000,
+        easing: 'easeInOutBack',
+        delay: 100 * i
+      });
+
+
 })
 
 document.body.querySelectorAll('.gallery')[0].addEventListener('click', function(e){

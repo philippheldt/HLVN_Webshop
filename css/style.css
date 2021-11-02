@@ -40,7 +40,7 @@ button{
     font-weight: bold;
     font-size: 17px;
     background-color: #939583;
-    /* margin-top: 100px; */
+    margin-top: 20px;
     cursor: pointer;
     transition: all 0.5s ease;
     border-radius: 5px;
@@ -112,6 +112,8 @@ nav img{
 }
 
 
+
+
 .gallery{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -173,12 +175,30 @@ nav img{
     opacity: 1;
 }
 
+.spacer .subtotal{
+    opacity: 1;
+}
+
 .subtotal.visible{
     opacity: 1;
 }
 
 .more{
     background-color: white;
+}
+
+.pink{
+    width: 100vw;
+    background-color: #E9D3BC;
+}
+
+.green{
+    width: 100vw;
+    background-color: #939583;
+}
+
+.green .container{
+    grid-template-columns: 10fr 7fr ;
 }
 
 @media (max-width: 1000px) {
