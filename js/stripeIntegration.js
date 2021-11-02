@@ -1,2 +1,0 @@
-//fetch publishable key
-var stripe = Stripe('pk_test_51JIWWjBJd4ms3fKh3LnU8EOmOgfA1t1sREMPdnrjrIKK7JquSrIDMxL9D4DIIRo8n7s1Z77XzEtAaECJq5BTL6LB008Nl2Kr6e')
