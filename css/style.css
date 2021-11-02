@@ -272,6 +272,16 @@ ul{
         margin-top: 100px;
     }
 
+    .details p,
+    .details ul{
+        grid-column: 1/3;
+    }
+
+    .details ul{
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
     .green1 .container{
         grid-gap: 0em;
     }
