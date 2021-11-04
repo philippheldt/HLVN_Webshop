@@ -18,15 +18,13 @@ paypal.Buttons({
       
       let priceFetch = document.querySelector('#gesamtUnten').innerHTML;
       priceFetch = priceFetch.split(",")[0];
-      let price = priceFetch + '.00'
+      let price = priceFetch + '.00';
       console.log(price);
 
+      
+
       return actions.order.create({
-        purchase_units: [{
-          amount:  {
-            value: price
-          }
-        }]
+        purchase_units: [{"description":"A5 Kalender 2022","amount":{"currency_code":"EUR","value":price}}]
       });
     },
     onApprove: function(data, actions) {
