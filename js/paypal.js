@@ -1,3 +1,9 @@
+const anAus = document.querySelector('.toggle');
+const rechnung = document.querySelector('.payment').addEventListener("click", () =>{
+  console.log('hallo')
+  anAus.classList.add('on');
+})
+
 const selectTag = document
   .querySelectorAll("select")[0]
   .addEventListener("change", function () {

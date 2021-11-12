@@ -1,0 +1,39 @@
+form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.toggle{
+    overflow: hidden;
+    height: 0px;
+    transition: all ease height;
+}
+
+.toggle.on{
+    height: max-content;
+}
+
+label{
+    color: black;
+}
+
+input{
+    width: 100%;
+    min-height: 40px;
+    padding: 10px;
+    box-sizing: border-box; 
+    border: 1px solid #2C2E2F;
+    border-radius: 4px;
+}
+
+.w-50{
+    margin-top: 10px;
+    width: 49%;
+}
+
+.w-100{
+    margin-top: 10px;
+    width: 100%;
+}

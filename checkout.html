@@ -7,7 +7,7 @@
     <title>Kalender 2022</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_white.css">
-    <link rel="stylesheet" href="css/scss/forms.css">
+    <link rel="stylesheet" href="css/form.css">
 </head>
 <body>
 <script src="https://www.paypal.com/sdk/js?client-id=AXP2b09U6XDXGENAadsQbOtTLmzrqDvwQcz-5us48Dt-R5NA3x-GYttqPPxnrWKPhmtypwJ1fl3Qed6u&currency=EUR&disable-funding=sepa,giropay"></script>
@@ -53,22 +53,36 @@
            
             <div>
                 <button class="payment"> Auf Rechnung bestellen</button>
-                <form action="POST" data-netlify="true">
-                    <label for="vorname">Vorname</label>
-                    <input type="text" name="Vorname">
-                    <label for="vorname">Nachname</label>
-                    <input type="text" name="Nachname">
-                    <label for="vorname">Straße, Hausnummer</label>
-                    <input type="text" name="Strasse">
-                    <label for="vorname">Postleihzahl</label>
-                    <input type="text" name="PLZ">
-                    <label for="vorname">Ort</label>
-                    <input type="text" name="Ort">
-                    <label for="vorname">E-Mail</label>
-                    <input type="text" name="email">
-                    <div class="field" data-netlify-recaptcha="true"></div>
-                    <button type="submit" class="payment"> Bestellen</button>
-                </form>
+                <div class="toggle">
+                    <form action="/danke" method="POST" name="bestellung" data-netlify="true">
+                        <div class="w-50">
+                            <label for="Vorname">Vorname</label>
+                            <input type="text" name="Vorname">
+                        </div>  
+                        <div class="w-50">
+                            <label for="Nachname">Nachname</label>
+                            <input type="text" name="Nachname">
+                        </div>  
+                        <div class="w-100"> 
+                            <label for="Strasse">Straße, Hausnummer</label>
+                            <input type="text" name="Strasse">
+                        </div>  
+                        <div class="w-50">
+                            <label for="PLZ">Postleitzahl</label>
+                            <input type="text" name="PLZ">
+                        </div>  
+                        <div class="w-50">
+                            <label for="Ort">Ort</label>
+                            <input type="text" name="Ort">
+                        </div>  
+                        <div class="w-100">
+                            <label for="email">E-Mail</label>
+                            <input type="text" name="email">
+                        </div>  
+                        <div class="field" data-netlify-recaptcha="true"></div>
+                        <button type="submit" class="payment-confirm"> Bestellen</button>
+                    </form>
+                </div>
                 <div id="paypal-button-container"></div>
             </div>
             
