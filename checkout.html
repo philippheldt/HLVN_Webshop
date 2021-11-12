@@ -53,19 +53,20 @@
            
             <div>
                 <button class="payment"> Auf Rechnung bestellen</button>
-                <form name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
+                <form action="POST" data-netlify="true">
                     <label for="vorname">Vorname</label>
-                    <input type="text">
+                    <input type="text" name="Vorname">
                     <label for="vorname">Nachname</label>
-                    <input type="text">
+                    <input type="text" name="Nachname">
                     <label for="vorname">Straße, Hausnummer</label>
-                    <input type="text">
+                    <input type="text" name="Strasse">
                     <label for="vorname">Postleihzahl</label>
-                    <input type="text">
+                    <input type="text" name="PLZ">
                     <label for="vorname">Ort</label>
-                    <input type="text">
+                    <input type="text" name="Ort">
                     <label for="vorname">E-Mail</label>
-                    <input type="text">
+                    <input type="text" name="email">
+                    <div class="field" data-netlify-recaptcha="true"></div>
                     <button type="submit" class="payment"> Bestellen</button>
                 </form>
                 <div id="paypal-button-container"></div>
