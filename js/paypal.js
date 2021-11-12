@@ -1,6 +1,7 @@
 const anAus = document.querySelector('.toggle');
 const rechnung = document.querySelector('.payment').addEventListener("click", () =>{
   console.log('hallo')
+  document.querySelector('#paypal-button-container').style.display = "none";
   anAus.classList.add('on');
 })
 
