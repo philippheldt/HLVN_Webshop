@@ -7,6 +7,7 @@
     <title>Kalender 2022</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style_white.css">
+    <link rel="stylesheet" href="css/scss/forms.css">
 </head>
 <body>
 <script src="https://www.paypal.com/sdk/js?client-id=AXP2b09U6XDXGENAadsQbOtTLmzrqDvwQcz-5us48Dt-R5NA3x-GYttqPPxnrWKPhmtypwJ1fl3Qed6u&currency=EUR&disable-funding=sepa,giropay"></script>
@@ -50,8 +51,26 @@
     <div class="description transition">
         <div class="spacer">
            
-            <br>
-            <div id="paypal-button-container"></div>
+            <div>
+                <button class="payment"> Auf Rechnung bestellen</button>
+                <form name="contact" netlify-honeypot="bot-field" method="POST" data-netlify="true">
+                    <label for="vorname">Vorname</label>
+                    <input type="text">
+                    <label for="vorname">Nachname</label>
+                    <input type="text">
+                    <label for="vorname">Straße, Hausnummer</label>
+                    <input type="text">
+                    <label for="vorname">Postleihzahl</label>
+                    <input type="text">
+                    <label for="vorname">Ort</label>
+                    <input type="text">
+                    <label for="vorname">E-Mail</label>
+                    <input type="text">
+                    <button type="submit" class="payment"> Bestellen</button>
+                </form>
+                <div id="paypal-button-container"></div>
+            </div>
+            
         </div>
     </div>
 </div>

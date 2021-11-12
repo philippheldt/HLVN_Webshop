@@ -66,6 +66,23 @@ button{
     border-radius: 5px;
 }
 
+.payment{
+    margin-bottom: 12px;
+    font-weight: normal;
+    font-size: 15px;
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    transition: all 0.25s linear;
+    background: #2C2E2F;
+    padding: 5px;
+}
+
+.payment:hover{
+    background-color: #37393a ;
+    transform: scale(1);
+}
+
 .secondary{
     border: 3px solid #fff;
     color: #fff;
