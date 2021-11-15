@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face{
+            font-family: 'Avenir', sans-serif;
+            src: url('fonts/Avenir_Next.ttc') format('tcc'),
+        }
+
+        *{
+            margin: 0;
+            padding: 0;;
+        }
+
+        body{
+            font-family: Avenir Next;
+            background-color: #E9D3BC;
+            color: #2C2D2E;
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+
+        p{
+            font-weight: 0;
+            font-size: 17px;
+            line-height: 1.5;
+            margin-top: 15px;
+        }
+        h1{
+            font-weight: 700;
+        }
+        .wrapper{
+            position: relative;
+            max-width: 500px;
+            margin: 10px auto;
+            padding: 40px 60px;
+            border-radius: 4px;
+            z-index: 2;
+        }
+
+        .white{
+            background-color: #fff;
+        }
+        table{
+            width: 100%;
+            text-align: left;
+        }
+
+
+        table, td, th{
+            border-collapse: collapse;
+            border: 1px solid #000 ;
+        }
+
+        td, th{
+            padding: 10px;
+        }
+
+        .floral{
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 0;
+        }
+
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+       <div class="wrapper logo">
+        <img width="250px" src="https://d33wubrfki0l68.cloudfront.net/b80d300ec484ff4b659ba4bd473b67b9e37d2287/e9db3/img/logo.svg" alt="">
+    </div>
+    <div class="wrapper white">
+        <h1>Hallo Philipp!</h1>
+        <p>Vielen Dank für deine Bestellung! Ab dem 1. Dezember 2021 werden wir sie an folgende Addresse versenden:</p>
+        <p> <b> Philipp Jenny</b> <br>Steinstr. 10 <br> 79312 Emmendingen</p>
+        <br><br>
+        <h2>Bestelldetails:</h2>
+        <table>
+            <tr>
+                <th>Produkt</th>
+                <th>Menge</th>
+                <th>Preis</th>
+            </tr>
+            <tr>
+                <td>Taschenkalender 2022</td>
+                <td>1</td>
+                <td>22,00 €</td>
+            </tr>
+            <tr>
+                <th>Gesamt:</th>
+                <td></td>
+                <td>22,00 €</td>
+            </tr>
+        </table>
+        <br><br>
+        <p class="konto">Bitte überweise den ausstehenden Betrag an folgendes Konto: <br>
+            Kontoinhaber: Philipp Jenny <br>
+            IBAN DE88 1001 1001 2621 5280 87 <br>
+            BIC NTSBDEB1XXX <br>
+            Verwendungszweck: Kalender 2021, Philipp Jenny</p>
+            <br><br>
+        <p>Liebe Grüße,<br>Elisa & Philipp</p>
+        
+    </div>
+
+    <img class="floral" width="250px" src="https://d33wubrfki0l68.cloudfront.net/403d602ac04cfdc8cdee5951bdd4f083d1b60f39/95f94/img/floral_pink.png" alt="">
+ 
+    
+
+</body>
+</html>
